@@ -1,0 +1,13 @@
+{
+  "author": "Sai Wong",
+  "name": "backbone-model-url-templating",
+  "description": "Plugin to Backbone.js to allow for model url templating",
+  "version": "0.1.0",
+  "homepage": "http://github.com/huffingtonpost/backbone-model-url-templating",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/huffingtonpost/backbone-model-url-templating"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
