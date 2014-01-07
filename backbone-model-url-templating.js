@@ -2,7 +2,7 @@
  * backbone-model-url-template
  *
  * Copyright (c) 2012, The Huffington Post
- * 
+ *
  * Plugin to Backbone.js to allow for model url templating.
  *
  * @version 0.1.0
@@ -31,10 +31,8 @@
 		urls: {},
 
 		renderURL: function ( method, options ) {
-			var urlString = ( (this.urls && getValue(this, this.urls, method) || getValue(this, this, 'url') ),
-				url = _.template( urlString, _.extend({}, this, this.attributes, options), templateSettings );
-
-			return url;
+			var urlString =  this.urls ? getValue(this, this.urls, method) : getValue(this, this, 'url');
+			return _.template( urlString, _.extend({}, this, this.attributes, options), templateSettings );
 		},
 
 		sync: function ( method, model, options ) {
