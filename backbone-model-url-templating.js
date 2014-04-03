@@ -31,7 +31,7 @@
 		urls: {},
 
 		renderURL: function ( method, options ) {
-			var urlString =  this.urls ? getValue(this, this.urls, method) : getValue(this, this, 'url');
+			var urlString =  !_.isEmpty(this.urls) ? getValue(this, this.urls, method) : getValue(this, this, 'url');
 			return _.template( urlString, _.extend({}, this, this.attributes, options), templateSettings );
 		},
 
